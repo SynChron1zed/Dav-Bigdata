@@ -1,0 +1,42 @@
+<!DOCMENT HTML>
+<html>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.js;'"></script>
+<head>
+
+</head>
+
+<style>
+  .news {
+    height: 20px;
+    margin-top: 5px;
+    cursor:pointer;
+  }
+  .news:hover{
+    background-color: whitesmoke;
+  }
+
+  .news1{
+    background-color: red;
+  }
+</style>
+<body>
+<div id="news">
+  <ul style="width: 200px">
+    <li class="news">11111</li>
+    <li class="news">22222</li>
+    <li class="news">33333</li>
+    <li class="news">44444</li>
+    <li class="news">55555</li>
+    </ul>
+</div>
+</body>
+<script>
+  $(function() {
+    $(".news").click(function (e) {
+        var ele =$(e.target)
+      ele.addClass('news1').siblings().removeClass('news1')
+    })
+
+  })
+</script>
+</html>

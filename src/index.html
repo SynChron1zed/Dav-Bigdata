@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: Hiragino Sans GB;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>-->
+  <title>Data Truning</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body style="margin: 0;">
+
+<div id="root">
+
+  <div id="main">
+
+  </div>
+
+</div>
+<script src="./lib/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=0UqXGL98FSmi22w2Rl6HK56I"></script>
+<script src="index.js"></script>
+
+
+<script>
+  var scale = 1 / devicePixelRatio;
+  document.querySelector('meta[name="viewport"]').setAttribute('content','initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+  document.documentElement.style.fontSize = document.documentElement.clientWidth / 10 + 'px';
+
+/*
+  $(document).ready(function(){
+    $(window).resize(function() {
+      var ratio = $(window).width()/(window.screen.width||$('body').width());
+      $('body').css({
+        transform: "scale("+ratio+")",
+        transformOrigin: "left top",
+        backgroundSize: "100%",
+
+      });
+    });
+
+  });*/
+
+
+
+
+
+</script>
+</body>
+</html>
